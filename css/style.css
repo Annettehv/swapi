@@ -1,5 +1,5 @@
 body {
-	background: url(assets/images/felix-mittermeier-Knwea-mLGAg-unsplash.jpg);
+	background: url(../assets/images/felix-mittermeier-Knwea-mLGAg-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -9,7 +9,7 @@ body {
 
 @font-face {
 	font-family: starwars;
-	src: url(assets/fonts/Starjedi.ttf);
+	src: url(../assets/fonts/Starjedi.ttf);
 }
 
 
@@ -19,7 +19,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	font-size: 7rem;
-	padding-top: 9rem;
+	padding-top: 8rem;
 }
 
 p {
@@ -27,7 +27,7 @@ p {
 	color:rgb(253, 216, 28);
 	display: flex;
 	justify-content: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .navigation {
