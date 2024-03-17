@@ -63,6 +63,7 @@ ul {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .list-container {
 	border: 2px solid white;
 	display:flex;
@@ -74,23 +75,36 @@ ul {
 	justify-content: center;
 	align-items: center;
 }
-.title {
+
+.createdLi {
+	border: 2px solid white;
+	display: flex;
+	margin-bottom: 0.5rem;
+}
+
+.title, .filmTitle {
 	flex-basis: 20%;
 }
 
-.director {
+.director, .filmDirector {
 	flex-basis: 20%;
 }
 
-.producer {
+.producer, .filmProducer {
 	flex-basis: 20%
 }
 
-.date {
+.date, .filmDate {
 	flex-basis: 20%
 }
 
-.image {
+.image, .filmImage {
 	flex-basis: 20%
 
+}
+
+.createdLi span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
