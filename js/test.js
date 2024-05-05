@@ -1,16 +1,23 @@
-const filmList = document.getElementById('filmList');
-const filmDetails = document.getElementById('filmDetails');
+const ul = document.querySelector('ul');
+const listContainer = document.querySelector('.list-container'); // select the container where you want to append the new list items
 
 const fetchFilms = async () => {
-    const response = await fetch('https://swapi.dev/api/films/');
-    const result = await response.json();
-    renderData(result.results);
+    try {
+        const response = await fetch('https://swapi.dev/api/films/');
+        const result = await response.json();
+        console.log(result.results);
+        renderData(result.results);
+    } catch (error) {
+        console.error('Error fetching films:', error);
+        // Display error message to the user if fetching films fails
+    }
 }
 
 fetchFilms();
 
 function renderData(films) {
     films.forEach(film => {
+        // create elements
         const li = document.createElement('li');
         const filmTitle = document.createElement('span');
         const filmDirector = document.createElement('span');
@@ -19,11 +26,14 @@ function renderData(films) {
         const filmImage = document.createElement('span');
         const filmIcon = document.createElement('img');
 
+        // setting the content of the created elements
         filmTitle.textContent = film.title;
         filmDirector.textContent = film.director;
         filmProducer.textContent = film.producer;
         filmDate.textContent = film.release_date;
+        /* filmImage.src = user.image; */
 
+        // adding classes to elements
         li.classList.add('createdLi');
         filmTitle.classList.add('filmTitle');
         filmDirector.classList.add('filmDirector');
@@ -31,7 +41,9 @@ function renderData(films) {
         filmDate.classList.add('filmDate');
         filmImage.classList.add('filmImage');
 
+        // append elements
+        listContainer.appendChild(li); // Append list items to the filmListContainer
         li.append(filmTitle, filmDirector, filmProducer, filmDate, filmImage);
-        filmList.appendChild(li);
+        filmImage.append(filmIcon);
     });
 }
