@@ -1,4 +1,4 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -53,4 +53,120 @@ h2 {
 	text-decoration: none;
 	font-size: 1.5rem;
 
+} */
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(23, 23, 70);;
+	height: 100vh;
+	width: 100vw;
+	padding: 1rem;
+
+}
+
+
+@font-face {
+	font-family: starwars;
+	src: url(../assets/fonts/Starjedi.ttf);
+}
+
+
+h2 {
+	font-family: starwars;
+	color: rgb(253, 216, 28);
+	display: flex;
+	justify-content: center;
+	font-size: 7rem;
+	padding-top: 4rem;
+}
+
+.navlink {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-decoration: none;
+	padding-right: 50px;
+	font-size: 1.5rem;
+	padding-top: 2rem;
+
+}
+
+.navlink :hover {
+	color: rgb(253, 216, 28);
+
+}
+
+.navlink-a {
+	list-style: none;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+
+}
+
+ul {
+	list-style: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+
+.list-container {
+	border: 2px solid white;
+	display:flex;
+	height: 2rem;
+	font-weight: bold;
+}
+.list-container span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.createdLi {
+	border: 2px solid white;
+	display: flex;
+	margin-bottom: 0.5rem;
+}
+
+.name, .planetsName {
+	flex-basis: 20%;
+}
+
+.rotation-period, .rotationPeriod {
+	flex-basis: 20%;
+}
+
+.diameter, .planetsDiameter {
+	flex-basis: 20%
+}
+
+.climate, .planetsClimate {
+	flex-basis: 20%
+}
+
+.terrain, .planetsTerrain {
+	flex-basis: 20%
+
+}
+
+.createdLi span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
 }
