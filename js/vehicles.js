@@ -7,7 +7,6 @@ const fetchVehicles = async () => {
     renderData(result.results);
 }
 
-// try and catch
 
 fetchVehicles();
 
@@ -19,7 +18,6 @@ function renderData(vehicles) {
         const vehiclesManufacturer = document.createElement('span');
         const vehiclesCrew = document.createElement('span');
         const vehiclesPassengers = document.createElement('span');
-        /* const filmIcon = document.createElement('img'); */
 
         vehiclesName.textContent = vehicles.name;
         vehiclesModel.textContent = vehicles.model;
@@ -33,7 +31,6 @@ function renderData(vehicles) {
         vehiclesManufacturer.classList.add('manufacturer');
         vehiclesCrew.classList.add('crew');
 		vehiclesPassengers.classList.add('passengers');
-        /* filmImage.classList.add('filmImage'); */
 
         li.append(vehiclesName, vehiclesModel, vehiclesManufacturer, vehiclesCrew, vehiclesPassengers);
         vehiclesList.appendChild(li);

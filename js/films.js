@@ -1,7 +1,3 @@
-/* Use try and catch in the fetchfilms and make the rows a 
-fixed height so the images has enough space
- */
-
 const filmList = document.getElementById('filmList');
 const filmDetails = document.getElementById('filmDetails');
 
@@ -11,7 +7,6 @@ const fetchFilms = async () => {
     renderData(result.results);
 }
 
-// try and catch
 
 fetchFilms();
 
@@ -35,19 +30,12 @@ function renderData(films) {
         filmDirector.classList.add('filmDirector');
         filmProducer.classList.add('filmProducer');
         filmDate.classList.add('filmDate');
-        /* filmImage.classList.add('filmImage'); */
+        
 
         li.append(filmTitle, filmDirector, filmProducer, filmDate, filmImage);
         filmList.appendChild(li);
     });
 }
 
-/* // Create and append an image for each film
-const img = document.createElement("img");
-img.src = `/assets/images/films/films-${i}.png`; // Use counter i to reference different images
-img.alt = film.title;
-img.classList.add("filmImg");
-image-container.appendChild(img);
-i++; // increment counter for next iteration
-if (i > 6) { i = 1; } // reset counter if you have only 2 images */
+
   

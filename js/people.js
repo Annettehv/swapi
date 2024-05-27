@@ -7,7 +7,6 @@ const fetchPeople = async () => {
     renderData(result.results);
 }
 
-// try and catch
 
 fetchPeople();
 
@@ -19,7 +18,6 @@ function renderData(people) {
         const peopleHaircolor = document.createElement('span');
         const peopleEyecolor = document.createElement('span');
         const peopleGender = document.createElement('span');
-        /* const filmIcon = document.createElement('img'); */
 
         peopleName.textContent = people.name;
         peopleBirthyear.textContent = people.birth_year;
@@ -33,7 +31,6 @@ function renderData(people) {
         peopleHaircolor.classList.add('haircolor');
         peopleEyecolor.classList.add('eyecolor');
 		peopleGender.classList.add('gender');
-        /* filmImage.classList.add('filmImage'); */
 
         li.append(peopleName, peopleBirthyear, peopleHaircolor, peopleEyecolor, peopleGender);
         peopleList.appendChild(li);

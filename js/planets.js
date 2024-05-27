@@ -7,7 +7,7 @@ const fetchPlanets = async () => {
     renderData(result.results);
 }
 
-// try and catch
+
 
 fetchPlanets();
 
@@ -19,7 +19,7 @@ function renderData(planets) {
         const planetsDiameter = document.createElement('span');
         const planetsClimate = document.createElement('span');
         const planetsTerrain = document.createElement('span');
-        /* const filmIcon = document.createElement('img'); */
+        
 
         planetsName.textContent = planets.name;
         planetsRotationPeriod.textContent = planets.rotation_period;
@@ -33,7 +33,7 @@ function renderData(planets) {
         planetsDiameter.classList.add('diameter');
         planetsClimate.classList.add('climate');
 		planetsTerrain.classList.add('terrain');
-        /* filmImage.classList.add('filmImage'); */
+        
 
         li.append(planetsName, planetsRotationPeriod, planetsDiameter, planetsClimate, planetsTerrain);
         planetsList.appendChild(li);
