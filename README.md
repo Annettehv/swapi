@@ -1,0 +1,3 @@
+For this assignment I have used async js to get information from the Star Wars api - swapi. I have five html pages, the main page with links to films, people, planets and vehicles. Each page renders information about each theme. Each page includes at least six records with 5 chosen properties the api offered. For the design I tried to stick to the starwars theme, I used a similar font as the starwars logo for the headings, and used a dark blue background on each page. I used flex box for the layout. 
+
+https://swapi.dev/
